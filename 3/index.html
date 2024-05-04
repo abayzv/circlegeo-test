@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <style>
+        .custom-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .custom-button:focus {
+            outline: 2px solid #ff8c00;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myButton" class="custom-button" tabindex="0">Tekan Tombol</button>
+
+    <script>
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', () => {
+            alert('Tombol diklik!');
+        });
+
+        window.onload = () => {
+            button.focus();
+        };
+    </script>
+</body>
+
+</html>
